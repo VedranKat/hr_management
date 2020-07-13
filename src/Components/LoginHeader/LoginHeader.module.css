@@ -1,0 +1,12 @@
+.button{
+    color: yellow;
+    text-decoration: underline;
+    background-color: gray; 
+    padding: 20px;
+    margin: 20px;
+}
+.Bar{
+    background-color: rgb(72, 122, 230);     
+    padding:5px;
+}
+
