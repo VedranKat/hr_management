@@ -20,7 +20,7 @@ class AddForm extends Component {
     
     try {   
         await postCard(this.state);
-        this.props.actions.addCard(this.state);            
+                   
     } catch (error) {
       console.log(error);
     }
