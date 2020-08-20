@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import cards from './cards';
+import employees from './employees';
 
 let reducers = {
-  cards,
+  employees,
 };
 
 const rootReducer = combineReducers(reducers);

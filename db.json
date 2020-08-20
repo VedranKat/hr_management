@@ -1,5 +1,11 @@
 {
-  "cards": [
-    
+  "employees": [
+    {
+      "ime": "asd",
+      "prezime": "asd",
+      "radnoMjesto": "asd",
+      "godinaRodjenja": "2222-02-22",
+      "id": 1
+    }
   ]
 }

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { addCard } from '../../redux/actions';
-import { postCard } from "../../services";
+import { postEmployee } from "../../services";
 import styles from './AddForm.module.css';
 
 class AddForm extends Component {
@@ -19,7 +17,7 @@ class AddForm extends Component {
   handleSubmit = async (event) => {
     
     try {   
-        await postCard(this.state);
+        await postEmployee(this.state);
                    
     } catch (error) {
       console.log(error);
@@ -77,7 +75,7 @@ class AddForm extends Component {
 
 function mapDispatchToProps(dispatch) {
   return {
-    cards: dispatch.cards.cards
+    employees: dispatch.employees.employees
   };
 }
 

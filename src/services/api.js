@@ -1,5 +1,5 @@
 import callApi from "../utils/call-api";
 
-export const getCards = () => callApi("/cards", { method: "GET" });
-export const postCard = body => callApi("/cards", { method: "POST", body });
-export const deleteCard = id => callApi(`/cards/${id}`, { method: "DELETE" });
+export const getEmployee = () => callApi("/employees", { method: "GET" });
+export const postEmployee = body => callApi("/employees", { method: "POST", body });
+export const deleteEmployee = id => callApi(`/employees/${id}`, { method: "DELETE" });
