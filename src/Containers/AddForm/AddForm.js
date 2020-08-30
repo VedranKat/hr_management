@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { postEmployee } from "../../services";
+import { postEmployees } from "../../services";
 import styles from './AddForm.module.css';
 
 class AddForm extends Component {
@@ -17,7 +17,7 @@ class AddForm extends Component {
   handleSubmit = async (event) => {
     
     try {   
-        await postEmployee(this.state);
+        await postEmployees(this.state);
                    
     } catch (error) {
       console.log(error);

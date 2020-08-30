@@ -1,12 +1,12 @@
 import React from "react";
 import {  Table } from "semantic-ui-react";
 import {useSelector} from 'react-redux';   
-import styles from './EList.module.css'; 
+import styles from './EListFilter.module.css'; 
 
-const EList = (props) => {
+const EListFilter = (props) => {
 
     const { employees } = useSelector((state) => state.employees);
-    const { currentWeek } = props;
+    const { searchOdjel } = props;
     
       return (
         <Table className={styles.tabla} singleLine>
@@ -21,7 +21,7 @@ const EList = (props) => {
         </Table.Header>
 
         <Table.Body>
-          {employees.map(el => {
+        {employees.filter(tj => tj.radnoMjesto === searchOdjel).map(el => {
               return (
                 <Table.Row key={el.id}> 
                 <Table.Cell>{el.id}</Table.Cell>
@@ -37,5 +37,5 @@ const EList = (props) => {
     );
   }
 
-  export default EList; 
+  export default EListFilter; 
 

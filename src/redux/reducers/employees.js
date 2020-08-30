@@ -8,7 +8,7 @@ const initialState = {
 function addEmployees(state, action) {
   return {
     ...state,
-    employees: [...state.employees, ...action.payload],
+    employees: [ ...action.payload],
     filteredEmployees: [...state.filteredEmployees, ...action.payload]
   };
 }

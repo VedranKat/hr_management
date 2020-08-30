@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import LoginHeader from "../LoginHeader/LoginHeader.js";
 import AdminHeader from "../AdminHeader/AdminHeader.js";
 import UserHeader from "../UserHeader/UserHeader.js";
@@ -9,9 +9,24 @@ import AdminDelete from "../AdminDelete/AdminDelete.js";
 import AdminUpdate from "../AdminUpdate/AdminUpdate.js";
 import SearchStatForm from "../SearchStatForm/SearchStatForm.js";
 import AdminSearchStat from "../AdminSearchStat/AdminSearchStat.js";
+import { getEmployees } from "../../services";
+import { addEmployees} from "../../redux/actions";
+import {useDispatch } from 'react-redux';
 
 
 const App=()=>{
+
+  const dispatch = useDispatch();
+
+  const fetchData = async () => {
+    const json = await getEmployees();
+    dispatch(addEmployees(json));
+  };
+
+
+  useEffect(() => {
+    fetchData();
+  });
 
 
 return(
