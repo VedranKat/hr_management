@@ -12,7 +12,7 @@ const AdminSearchStat=()=>{
 return(
     <div>
         <AdminHeader></AdminHeader>
-        <EListFilter></EListFilter>        
+        <EListFilter searchOdjel = {searchOdjel}/>        
     </div>
 )
 
