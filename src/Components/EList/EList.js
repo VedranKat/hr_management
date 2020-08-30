@@ -5,8 +5,7 @@ import styles from './EList.module.css';
 
 const EList = (props) => {
 
-    const { employees } = useSelector((state) => state.employees);
-    const { currentWeek } = props;
+    const { employees } = useSelector((state) => state.employees);    
     
       return (
         <Table className={styles.tabla} singleLine>

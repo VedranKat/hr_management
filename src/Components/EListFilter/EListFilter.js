@@ -5,10 +5,29 @@ import styles from './EListFilter.module.css';
 
 const EListFilter = (props) => {
 
-    const { employees } = useSelector((state) => state.employees);
-    const { searchOdjel } = props;
+  
+    const { employees } = useSelector((state) => state.employees);  
+    const [searchOdjel, setOdjel] = React.useState("");
+
+    function handleNameChange(e) {
+      setOdjel(e.target.value);
+    }
+    
     
       return (
+      <div id="parent">
+        <form autocomplete="off">        
+          <label htmlFor="name">Unesite Radno Mjesto</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value={searchOdjel}
+            onChange={handleNameChange}/>        
+      </form>      
+    
+
+
         <Table className={styles.tabla} singleLine>
           <Table.Header>
             <Table.Row>
@@ -18,7 +37,7 @@ const EListFilter = (props) => {
             <Table.HeaderCell>Radno Mjesto</Table.HeaderCell>
             <Table.HeaderCell>Godina Rodjenja</Table.HeaderCell>
           </Table.Row>
-        </Table.Header>
+        </Table.Header>        
 
         <Table.Body>
         {employees.filter(tj => tj.radnoMjesto === searchOdjel).map(el => {
@@ -33,7 +52,9 @@ const EListFilter = (props) => {
             );
           })}
         </Table.Body>
-      </Table>
+      </Table>        
+      </div>        
+      
     );
   }
 
