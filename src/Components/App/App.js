@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AdminAdd from "../AdminAdd/AdminAdd.js";
 import AdminDelete from "../AdminDelete/AdminDelete.js";
 import AdminUpdate from "../AdminUpdate/AdminUpdate.js";
-import SearchStatForm from "../SearchStatForm/SearchStatForm.js";
 import AdminSearchStat from "../AdminSearchStat/AdminSearchStat.js";
 import { getEmployees } from "../../services";
 import { addEmployees} from "../../redux/actions";
