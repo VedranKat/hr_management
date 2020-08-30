@@ -54,7 +54,7 @@ function editEmployee(state, action) {
   };
 }
 
-function filteremployees(state, action) {
+function filterEmployees(state, action) {
   return Object.assign({}, state, {
     filteredEmployees: state.employees.filter(
       card =>
@@ -78,7 +78,7 @@ export default function reducer(state = initialState, action) {
       return editEmployee(state, action);
 
     case FILTER_EMPLOYEES:
-      return filteremployees(state, action);
+      return filterEmployees(state, action);
 
     default:
       return state;
