@@ -1,18 +1,3 @@
 {
-  "employees": [
-    {
-      "ime": "sdaasd",
-      "prezime": "sdsdsd",
-      "radnoMjesto": "sdsds",
-      "godinaRodjenja": "3333-03-31",
-      "id": 5
-    },
-    {
-      "ime": "klos",
-      "prezime": "klos",
-      "radnoMjesto": "klos",
-      "godinaRodjenja": "2222-02-22",
-      "id": 6
-    }
-  ]
+  "employees": []
 }

@@ -21,7 +21,7 @@ const AdminHeader=()=>{
                     Delete Employee
             </Link>    
             <Link to = "/AdminSearchStat" className={styles.button}>
-                    Search Employee /Statistics
+                    Search
             </Link>             
             </div>
     )
