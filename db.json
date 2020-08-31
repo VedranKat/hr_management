@@ -1,34 +1,6 @@
 {
   "employees": [
     {
-      "ime": "asd",
-      "prezime": "asd",
-      "radnoMjesto": "asd",
-      "godinaRodjenja": "2222-02-22",
-      "id": 1
-    },
-    {
-      "ime": "vedran",
-      "prezime": "vedran",
-      "radnoMjesto": "vedran",
-      "godinaRodjenja": "2222-02-22",
-      "id": 2
-    },
-    {
-      "ime": "novi",
-      "prezime": "novi",
-      "radnoMjesto": "novi",
-      "godinaRodjenja": "2222-02-22",
-      "id": 3
-    },
-    {
-      "ime": "dddd",
-      "prezime": "ddd",
-      "radnoMjesto": "ddd",
-      "godinaRodjenja": "0222-02-22",
-      "id": 4
-    },
-    {
       "ime": "sdaasd",
       "prezime": "sdsdsd",
       "radnoMjesto": "sdsds",

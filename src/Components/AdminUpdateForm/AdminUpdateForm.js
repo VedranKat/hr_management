@@ -7,7 +7,7 @@ const AdminUpdateForm=()=>{
     return(
         
             <div className={styles.BodyForm}>    
-            Forma za Update
+            Work in progress
 
             </div>
     )

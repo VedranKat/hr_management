@@ -9,11 +9,11 @@ return(
     
         <div className={styles.Bar}>        
         <Link to="/Admin" className={styles.button}>
-                Log in
+                Admin
         </Link>    
-        <button className={styles.button}>
-                Register New User
-        </button>                
+        <Link to="/User" className={styles.button}>
+                User
+        </Link>               
         </div>
 )
 

@@ -11,10 +11,12 @@ const UserHeader=()=>{
             <Link to="/" className={styles.button}>
                     HOME
             </Link>               
-            <button className={styles.button}>
-                    Search Employee /Statistics
-            </button>             
+            <Link to="/UserSearchStat" className={styles.button}>
+                    Search
+            </Link>                 
             </div>
+
+        
     )
     
     }

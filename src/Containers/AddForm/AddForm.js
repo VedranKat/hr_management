@@ -67,7 +67,7 @@ class AddForm extends Component {
           onChange={this.handleChange}
           required
         />
-        <button type="submit" className={styles.button}>Add card</button>
+        <button type="submit" className={styles.button}>Add Employee</button>
       </form>      
     );
   }
