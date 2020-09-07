@@ -25,7 +25,10 @@ const AdminHeader=()=>{
             </Link>   
             <Link to = "/AdminFilter" className={styles.button}>
                     Filter
-            </Link>                
+            </Link>        
+            <Link to = "/AdminStatistics" className={styles.button}>
+                    Statistics
+            </Link>           
             </div>
     )
     

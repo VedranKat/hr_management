@@ -107,6 +107,24 @@
       "datumRodjenja": "1998-06-06",
       "datumZaposlenja": "2019-06-06",
       "id": 15
+    },
+    {
+      "imePrezime": "Ivan Ivanic",
+      "placa": "9500",
+      "odjel": "IT",
+      "uloga": "IT-Designer",
+      "datumRodjenja": "1995-06-06",
+      "datumZaposlenja": "2019-06-06",
+      "id": 16
+    },
+    {
+      "imePrezime": "Jozo Jozic",
+      "placa": "13000",
+      "odjel": "Management",
+      "uloga": "Management-Commercial",
+      "datumRodjenja": "1981-06-06",
+      "datumZaposlenja": "2017-06-06",
+      "id": 17
     }
   ]
 }

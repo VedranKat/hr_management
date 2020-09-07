@@ -13,6 +13,7 @@ import { addEmployees} from "../../redux/actions";
 import {useDispatch } from 'react-redux';
 import UserSearchStat from "../UserSearchStat/UserSearchStat.js";
 import AdminFilter from "../AdminFilter/AdminFilter.js";
+import AdminStatistics from "../AdminStatistics/AdminStatistics"
 
 
 const App=()=>{
@@ -41,6 +42,7 @@ return(
       <Route path="/AdminUpdate" component={AdminUpdate}/>
       <Route path="/AdminSearchStat" component={AdminSearchStat}/>  
       <Route path="/AdminFilter" component={AdminFilter}/> 
+      <Route path="/AdminStatistics" component={AdminStatistics}/> 
       <Route path="/UserSearchStat" component={UserSearchStat}/>     
       <Route path="/User" component={UserHeader} />
     </Switch>
