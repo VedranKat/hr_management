@@ -7,47 +7,49 @@ const EListFilter = (props) => {
 
   
     const { employees } = useSelector((state) => state.employees);  
-    const [searchOdjel, setOdjel] = React.useState("");
+    const [searchIme, setIme] = React.useState("");         
 
     function handleNameChange(e) {
-      setOdjel(e.target.value);
-    }
-    
+      setIme(e.target.value);
+    }   
     
       return (
       <div id="parent">
         <form autocomplete="off">        
-          <label htmlFor="name">Unesite Radno Mjesto</label>
+          <label htmlFor="name">Unesite Ime I prezime</label>
           <input
             type="text"
             name="name"
             id="name"
-            value={searchOdjel}
+            value={searchIme}
             onChange={handleNameChange}/>        
-      </form>      
-    
-
+      </form>
+  
 
         <Table className={styles.tabla} singleLine>
           <Table.Header>
             <Table.Row>
             <Table.HeaderCell>ID</Table.HeaderCell>
-            <Table.HeaderCell>Ime</Table.HeaderCell>
-            <Table.HeaderCell>Prezime</Table.HeaderCell>
-            <Table.HeaderCell>Radno Mjesto</Table.HeaderCell>
-            <Table.HeaderCell>Godina Rodjenja</Table.HeaderCell>
+            <Table.HeaderCell>Ime i Prezime</Table.HeaderCell>    
+            <Table.HeaderCell>Placa</Table.HeaderCell>        
+            <Table.HeaderCell>Odjel</Table.HeaderCell>
+            <Table.HeaderCell>Uloga</Table.HeaderCell>
+            <Table.HeaderCell>Datum Rodjenja</Table.HeaderCell>
+            <Table.HeaderCell>Datum Zaposlenja</Table.HeaderCell>
           </Table.Row>
         </Table.Header>        
 
         <Table.Body>
-        {employees.filter(tj => tj.radnoMjesto === searchOdjel).map(el => {
+        {employees.filter(tj => tj.imePrezime === searchIme).map(el => {
               return (
                 <Table.Row key={el.id}> 
                 <Table.Cell>{el.id}</Table.Cell>
-                <Table.Cell>{el.ime}</Table.Cell>
-                <Table.Cell>{el.prezime}</Table.Cell>
-                <Table.Cell>{el.radnoMjesto}</Table.Cell>
-                <Table.Cell>{el.godinaRodjenja}</Table.Cell>
+                <Table.Cell>{el.imePrezime}</Table.Cell>
+                <Table.Cell>{el.placa}</Table.Cell>
+                <Table.Cell>{el.odjel}</Table.Cell>
+                <Table.Cell>{el.uloga}</Table.Cell>
+                <Table.Cell>{el.datumRodjenja}</Table.Cell>
+                <Table.Cell>{el.datumZaposlenja}</Table.Cell>
               </Table.Row>
             );
           })}

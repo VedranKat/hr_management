@@ -7,10 +7,12 @@ class AddForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ime: '',
-      prezime: '',
-      radnoMjesto: '',
-      godinaRodjenja: ''
+      imePrezime: '',
+      placa: '',
+      odjel: '',
+      uloga: '',
+      datumRodjenja: '',      
+      datumZaposlenja: ''
     }
   }
 
@@ -23,10 +25,12 @@ class AddForm extends Component {
       console.log(error);
     }
 
-    this.setState({ ime: "",
-    prezime: "",
-    radnoMjesto: "",
-    godinaRodjenja: "" });
+    this.setState({ imePrezime: '',
+    placa: '',
+    odjel: '',
+    uloga: '',
+    datumRodjenja: '',      
+    datumZaposlenja: '' });
   };
 
   handleChange = (event) => {
@@ -38,32 +42,51 @@ class AddForm extends Component {
       <form className={styles.form} onSubmit={this.handleSubmit}>
         <input
           className={styles.input}  
-          placeholder="ime" 
+          placeholder="ime i prezime" 
           type="text"
-          name="ime"
+          name="imePrezime"
           onChange={this.handleChange}
           required
         />
         <input
           className={styles.input}     
-          placeholder="prezime"     
+          placeholder="placa"     
           type="text"
-          name="prezime"
+          name="placa"
           onChange={this.handleChange}
           required
         />
         <input
           className={styles.input}   
-          placeholder="radnoMjesto"       
+          placeholder="odjel"       
           type="text"
-          name="radnoMjesto"
+          name="odjel"
           onChange={this.handleChange}
           required
         />
         <input
-          className={styles.input}          
+          className={styles.input}   
+          placeholder="uloga"       
+          type="text"
+          name="uloga"
+          onChange={this.handleChange}
+          required
+        />        
+        Datum Rodjenja  :
+        <input
+          className={styles.input}   
+          placeholder="Datum Rodjenja"       
           type="date"          
-          name="godinaRodjenja"
+          name="datumRodjenja"
+          onChange={this.handleChange}
+          required
+        />        
+        Datum Zaposlenja  :
+        <input
+          className={styles.input}   
+          label="datum Zaposlenja"       
+          type="date"          
+          name="datumZaposlenja"
           onChange={this.handleChange}
           required
         />

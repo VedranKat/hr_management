@@ -1,3 +1,112 @@
 {
-  "employees": []
+  "employees": [
+    {
+      "imePrezime": "Vedran Katavic",
+      "placa": "10000",
+      "odjel": "IT",
+      "uloga": "IT-BackEnd",
+      "datumRodjenja": "1992-03-23",
+      "datumZaposlenja": "2020-06-06",
+      "id": 1
+    },
+    {
+      "imePrezime": "Luka Muse",
+      "placa": "10000",
+      "odjel": "IT",
+      "uloga": "IT-FrontEnd",
+      "datumRodjenja": "1999-06-06",
+      "datumZaposlenja": "2018-06-06",
+      "id": 2
+    },
+    {
+      "imePrezime": "Iva Ivic",
+      "placa": "9500",
+      "odjel": "IT",
+      "uloga": "IT-Designer",
+      "datumRodjenja": "1995-06-06",
+      "datumZaposlenja": "2015-02-06",
+      "id": 3
+    },
+    {
+      "imePrezime": "Marija Maric",
+      "placa": "7000",
+      "odjel": "Accounting",
+      "uloga": "Accounting-Financial",
+      "datumRodjenja": "1980-03-03",
+      "datumZaposlenja": "2014-06-06",
+      "id": 5
+    },
+    {
+      "imePrezime": "Matko Matic",
+      "placa": "7000",
+      "odjel": "Accounting",
+      "uloga": "Accounting-HR",
+      "datumRodjenja": "1985-06-06",
+      "datumZaposlenja": "2014-06-06",
+      "id": 6
+    },
+    {
+      "imePrezime": "Ante Antic",
+      "placa": "8200",
+      "odjel": "IT",
+      "uloga": "IT-QA",
+      "datumRodjenja": "1989-06-06",
+      "datumZaposlenja": "2016-06-06",
+      "id": 9
+    },
+    {
+      "imePrezime": "Jakov Jakovčić",
+      "placa": "30000",
+      "odjel": "Management",
+      "uloga": "Management-CEO",
+      "datumRodjenja": "1970-06-06",
+      "datumZaposlenja": "2014-06-06",
+      "id": 10
+    },
+    {
+      "imePrezime": "Karlo Karlos",
+      "placa": "13000",
+      "odjel": "Management",
+      "uloga": "Management-Commercial",
+      "datumRodjenja": "1971-06-06",
+      "datumZaposlenja": "2014-06-06",
+      "id": 11
+    },
+    {
+      "imePrezime": "Vedran Vedranic",
+      "placa": "9000",
+      "odjel": "HR",
+      "uloga": "HR-Manager",
+      "datumRodjenja": "1980-06-06",
+      "datumZaposlenja": "2017-06-06",
+      "id": 12
+    },
+    {
+      "imePrezime": "Ivanka Ivankic",
+      "placa": "9200",
+      "odjel": "HR",
+      "uloga": "HR-Advisor",
+      "datumRodjenja": "1975-06-06",
+      "datumZaposlenja": "2014-06-06",
+      "id": 13
+    },
+    {
+      "imePrezime": "Kata Katic",
+      "placa": "10000",
+      "odjel": "IT",
+      "uloga": "IT-BackEnd",
+      "datumRodjenja": "1993-04-04",
+      "datumZaposlenja": "2019-04-04",
+      "id": 14
+    },
+    {
+      "imePrezime": "Kristijan Kristic",
+      "placa": "10000",
+      "odjel": "IT",
+      "uloga": "IT-FrontEnd",
+      "datumRodjenja": "1998-06-06",
+      "datumZaposlenja": "2019-06-06",
+      "id": 15
+    }
+  ]
 }
