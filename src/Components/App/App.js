@@ -14,6 +14,8 @@ import {useDispatch } from 'react-redux';
 import UserSearchStat from "../UserSearchStat/UserSearchStat.js";
 import AdminFilter from "../AdminFilter/AdminFilter.js";
 import AdminStatistics from "../AdminStatistics/AdminStatistics"
+import UserStatistics from "../UserStatistics/UserStatistics.js";
+import UserFilter from "../UserFilter/UserFilter.js";
 
 
 const App=()=>{
@@ -43,7 +45,9 @@ return(
       <Route path="/AdminSearchStat" component={AdminSearchStat}/>  
       <Route path="/AdminFilter" component={AdminFilter}/> 
       <Route path="/AdminStatistics" component={AdminStatistics}/> 
-      <Route path="/UserSearchStat" component={UserSearchStat}/>     
+      <Route path="/UserSearchStat" component={UserSearchStat}/>  
+      <Route path="/UserFilter" component={UserFilter}/>
+      <Route path="/UserStatistics" component={UserStatistics}/>   
       <Route path="/User" component={UserHeader} />
     </Switch>
   </div>

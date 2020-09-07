@@ -16,7 +16,7 @@ const EListFilter = (props) => {
   return (
     <div id="parent">
       <form autocomplete="off">
-        <label htmlFor="name">Unesite Ime I prezime</label>
+        <label htmlFor="name">Unesite Ime I prezime :</label>
         <input
           type="text"
           name="name"

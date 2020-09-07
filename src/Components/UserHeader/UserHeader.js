@@ -13,7 +13,13 @@ const UserHeader=()=>{
             </Link>               
             <Link to="/UserSearchStat" className={styles.button}>
                     Search
-            </Link>                 
+            </Link>      
+            <Link to="/UserFilter" className={styles.button}>
+                    Filter
+            </Link>  
+            <Link to="/UserStatistics" className={styles.button}>
+                    Statistics
+            </Link>             
             </div>
 
         
