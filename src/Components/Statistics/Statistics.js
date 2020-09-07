@@ -151,7 +151,7 @@ const Statistics = (props) => {
     }
 
     return (
-        <div id="parent">            
+        <div id="parent">
             <h2>Opća statistika</h2>
             <Table className={styles.tabla} singleLine>
                 <Table.Header>
@@ -170,7 +170,7 @@ const Statistics = (props) => {
                         <Table.Cell>{prosjecnoVrijeme(0)} god</Table.Cell>
                     </Table.Row>
                 </Table.Body>
-            </Table>            
+            </Table>
             <h2>Statistika po odjelima</h2>
             <h3>1. Broj zaposlenika po odjelima</h3>
             <Table className={styles.tabla} singleLine>
@@ -228,7 +228,7 @@ const Statistics = (props) => {
                         <Table.Cell>{prosjecnaDobHR(0)} god</Table.Cell>
                     </Table.Row>
                 </Table.Body>
-            </Table>            
+            </Table>
             <h3>4. Prosjecni radni vijek po odjelima</h3>
             <Table className={styles.tabla} singleLine>
                 <Table.Header>
@@ -248,9 +248,7 @@ const Statistics = (props) => {
                     </Table.Row>
                 </Table.Body>
             </Table>
-
         </div>
-
     );
 }
 
